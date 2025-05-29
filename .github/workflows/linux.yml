@@ -107,6 +107,7 @@ jobs:
         path: |
           Build
           Resources
+          libONI
 
   deploy-linux:
 
