@@ -138,4 +138,4 @@ jobs:
         cp -r libONI/linux/*.so shared
         zipfile=${package}_${new_plugin_ver}.zip
         zip -r -X $zipfile plugins shared
-        curl -H "X-JFrog-Art-Api:$ARTIFACTORY_ACCESS_TOKEN" -T $zipfile "https://openephys.jfrog.io/artifactory/AcquisitionBoard-plugin/linux/$zipfile" --fail
+        curl -H "X-JFrog-Art-Api:$ARTIFACTORY_ACCESS_TOKEN" -T $zipfile "https://openephys.jfrog.io/artifactory/AcquisitionBoard-plugin/linux/$zipfile"
