@@ -2,7 +2,11 @@ name: Windows
 
 on: 
   push:
+    branches: [main] # NB: Runs whenever a PR is merged to main
   pull_request:
+    branches: [main] # NB: Runs when a PR to main is opened. This can be expanded to run when PRs are opened to other branches (i.e., testing-juce8)
+  release:
+    types: [published] # NB: Runs whenever a new release is created. Releases are based on tags, but are separate in that a tag can be created without a concurrent release
 
 jobs:
 
